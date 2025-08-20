@@ -2,11 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -17,11 +16,6 @@ const Navigation = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const toggleDarkMode = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
-  };
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -36,7 +30,7 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-lg dark:bg-gray-900/95' 
+        ? 'bg-white/95 backdrop-blur-md shadow-lg' 
         : 'bg-transparent'
     }`}>
       <div className="container-custom">
@@ -52,12 +46,12 @@ const Navigation = () => {
             </div>
             <div className="hidden sm:block">
               <h1 className={`text-xl font-bold ${
-                isScrolled ? 'text-gray-900 dark:text-white' : 'text-white'
+                isScrolled ? 'text-gray-900' : 'text-white'
               }`}>
                 Ghana First
               </h1>
               <p className={`text-xs ${
-                isScrolled ? 'text-gray-600 dark:text-gray-400' : 'text-gray-200'
+                isScrolled ? 'text-gray-600' : 'text-gray-200'
               }`}>
                 Company Limited
               </p>
@@ -72,7 +66,7 @@ const Navigation = () => {
                 href={link.href}
                                  className={`font-medium transition-colors duration-200 relative group ${
                    isScrolled 
-                     ? 'text-gray-700 hover:text-red-600 dark:text-gray-300 dark:hover:text-red-400' 
+                     ? 'text-gray-700 hover:text-red-600' 
                      : 'text-white hover:text-yellow-300'
                  }`}
               >
@@ -84,19 +78,11 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Dark Mode Toggle & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
-              aria-label="Toggle dark mode"
-            >
-              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
-
+          {/* Mobile Menu Button */}
+          <div className="flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              className="lg:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
               aria-label="Toggle mobile menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -106,10 +92,10 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className={`lg:hidden border-t border-gray-200 dark:border-gray-700 ${
+          <div className={`lg:hidden border-t border-gray-200 ${
             isScrolled 
-              ? 'bg-white/95 backdrop-blur-md dark:bg-gray-900/95' 
-              : 'bg-white dark:bg-gray-900'
+              ? 'bg-white/95 backdrop-blur-md' 
+              : 'bg-white'
           }`}>
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) => (
@@ -117,7 +103,7 @@ const Navigation = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                                     className="block text-gray-700 hover:text-red-600 dark:text-gray-300 dark:hover:text-red-400 font-medium py-2 transition-colors duration-200"
+                                     className="block text-gray-700 hover:text-red-600 font-medium py-2 transition-colors duration-200"
                 >
                   {link.name}
                 </Link>
