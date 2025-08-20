@@ -45,7 +45,7 @@ const Navigation = () => {
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-16 h-12 flex items-center justify-center bg-white rounded-lg shadow-sm">
               <img 
-                src="/images/logo.svg" 
+                src="/images/logo.png" 
                 alt="Ghana First Company Limited Logo" 
                 className="h-10 w-auto"
               />
