@@ -23,7 +23,7 @@ export default function ProjectsPage() {
   const projects = [
     {
       title: "Accra Central Market Sanitation",
-      description: "Modern sanitary facilities serving over 50,000 daily visitors at Ghana's largest market. Features water-efficient fixtures, accessibility compliance, and 24/7 maintenance support.",
+              description: "Modern sanitary facilities serving over 50,000 daily visitors at Ghana&apos;s largest market. Features water-efficient fixtures, accessibility compliance, and 24/7 maintenance support.",
       image: "/images/project-1.jpg",
       location: "Accra Central Market, Greater Accra",
       status: "Completed",
@@ -134,7 +134,7 @@ export default function ProjectsPage() {
             Our Projects
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-            Discover how we're transforming communities across Ghana through innovative 
+                          Discover how we&apos;re transforming communities across Ghana through innovative 
             sanitation solutions and sustainable infrastructure development.
           </p>
         </div>
@@ -283,7 +283,7 @@ export default function ProjectsPage() {
               Our Impact Across Ghana
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Through our projects, we've created lasting positive change in communities 
+              Through our projects, we&apos;ve created lasting positive change in communities 
               across all regions of Ghana.
             </p>
           </div>
@@ -347,7 +347,7 @@ export default function ProjectsPage() {
             Ready to Start Your Project?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's work together to bring sustainable sanitation solutions to your community 
+                          Let&apos;s work together to bring sustainable sanitation solutions to your community 
             and create lasting positive impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

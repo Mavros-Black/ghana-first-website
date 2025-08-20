@@ -45,7 +45,7 @@ export default function NewsPage() {
     {
       id: 3,
       title: "Community Impact: How Sanitation Facilities Transformed Accra Central Market",
-      excerpt: "A comprehensive look at how our modern sanitary facilities have improved public health and business operations at Ghana's largest market.",
+              excerpt: "A comprehensive look at how our modern sanitary facilities have improved public health and business operations at Ghana&apos;s largest market.",
       content: "A comprehensive look at how our modern sanitary facilities have improved public health and business operations at Ghana's largest market. The installation of state-of-the-art facilities serving over 50,000 daily visitors has resulted in improved hygiene standards, increased customer satisfaction, and enhanced business opportunities for market vendors. The project demonstrates the direct link between sanitation infrastructure and economic development.",
       author: "Ama Osei",
       date: "November 10, 2023",
@@ -56,8 +56,8 @@ export default function NewsPage() {
     {
       id: 4,
       title: "Ghana First Partners with UN to Support Sustainable Development Goals",
-      excerpt: "We're proud to announce our partnership with the United Nations to support the implementation of Sustainable Development Goals across Africa.",
-      content: "We're proud to announce our partnership with the United Nations to support the implementation of Sustainable Development Goals across Africa. This collaboration will focus on SDG 6 (Clean Water and Sanitation), SDG 7 (Affordable and Clean Energy), and SDG 11 (Sustainable Cities and Communities). Our innovative solutions will help accelerate progress toward these critical global objectives.",
+              excerpt: "We&apos;re proud to announce our partnership with the United Nations to support the implementation of Sustainable Development Goals across Africa.",
+        content: "We&apos;re proud to announce our partnership with the United Nations to support the implementation of Sustainable Development Goals across Africa. This collaboration will focus on SDG 6 (Clean Water and Sanitation), SDG 7 (Affordable and Clean Energy), and SDG 11 (Sustainable Cities and Communities). Our innovative solutions will help accelerate progress toward these critical global objectives.",
       author: "Efua Addo",
       date: "October 25, 2023",
       category: "Partnerships",
@@ -68,7 +68,7 @@ export default function NewsPage() {
       id: 5,
       title: "Youth Education Program Launches in Cape Coast Schools",
       excerpt: "Our new youth education program is teaching students about sustainable sanitation practices and environmental conservation.",
-      content: "Our new youth education program is teaching students about sustainable sanitation practices and environmental conservation. The program, launched in partnership with local schools in Cape Coast, includes hands-on workshops, educational materials, and community projects. By engaging young people in sustainability initiatives, we're building a foundation for long-term environmental stewardship.",
+      content: "Our new youth education program is teaching students about sustainable sanitation practices and environmental conservation. The program, launched in partnership with local schools in Cape Coast, includes hands-on workshops, educational materials, and community projects. By engaging young people in sustainability initiatives, we&apos;re building a foundation for long-term environmental stewardship.",
       author: "Community Team",
       date: "October 12, 2023",
       category: "Education",

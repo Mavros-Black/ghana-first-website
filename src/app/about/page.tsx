@@ -47,7 +47,7 @@ export default function AboutPage() {
       name: "Kwame Asante",
       position: "Chief Executive Officer",
       image: "/images/ceo.jpg",
-      bio: "Over 15 years of experience in environmental engineering and sustainable development. Led the company's expansion across 5 African countries."
+              bio: "Over 15 years of experience in environmental engineering and sustainable development. Led the company&apos;s expansion across 5 African countries."
     },
     {
       name: "Ama Osei",

@@ -144,8 +144,8 @@ export default function ContactPage() {
                 Send Us a Message
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                Fill out the form below and we'll get back to you within 24 hours. 
-                We're here to help with all your sanitation needs.
+                              Fill out the form below and we&apos;ll get back to you within 24 hours.
+              We&apos;re here to help with all your sanitation needs.
               </p>
               
               {isSubmitted ? (
@@ -157,7 +157,7 @@ export default function ContactPage() {
                         Message Sent Successfully!
                       </h3>
                       <p className="text-green-700 dark:text-green-300">
-                        Thank you for contacting us. We'll get back to you within 24 hours.
+                        Thank you for contacting us. We&apos;ll get back to you within 24 hours.
                       </p>
                     </div>
                   </div>
@@ -366,7 +366,7 @@ export default function ContactPage() {
                 How long does a typical project take?
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Project timelines vary depending on scope and complexity. Small facilities typically take 2-4 weeks, while larger projects may take 2-3 months. We'll provide a detailed timeline during consultation.
+                Project timelines vary depending on scope and complexity. Small facilities typically take 2-4 weeks, while larger projects may take 2-3 months. We&apos;ll provide a detailed timeline during consultation.
               </p>
             </div>
             
@@ -393,7 +393,7 @@ export default function ContactPage() {
                 How do I get a quote for my project?
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Contact us through the form above or call us directly. We'll schedule a consultation to assess your needs and provide a detailed quote within 48 hours.
+                Contact us through the form above or call us directly. We&apos;ll schedule a consultation to assess your needs and provide a detailed quote within 48 hours.
               </p>
             </div>
           </div>

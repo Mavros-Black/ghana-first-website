@@ -86,7 +86,7 @@ export default function ServicesPage() {
     {
       number: "01",
       title: "Consultation & Assessment",
-      description: "We begin with a comprehensive assessment of your community's needs and existing infrastructure."
+              description: "We begin with a comprehensive assessment of your community&apos;s needs and existing infrastructure."
     },
     {
       number: "02",
@@ -96,7 +96,7 @@ export default function ServicesPage() {
     {
       number: "03",
       title: "Installation & Implementation",
-      description: "Professional installation with minimal disruption to your community's daily activities."
+              description: "Professional installation with minimal disruption to your community&apos;s daily activities."
     },
     {
       number: "04",
@@ -256,7 +256,7 @@ export default function ServicesPage() {
                 Quality Assurance & Support
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                We don't just install facilities – we ensure they continue to serve 
+                We don&apos;t just install facilities – we ensure they continue to serve 
                 communities effectively for years to come through comprehensive support.
               </p>
               
@@ -342,7 +342,7 @@ export default function ServicesPage() {
             Ready to Transform Your Community?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss how our services can benefit your community and create 
+                          Let&apos;s discuss how our services can benefit your community and create 
             a sustainable future for generations to come.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -143,8 +143,8 @@ export default function SustainabilityPage() {
                 Our Sustainability Mission
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                At Ghana First Company Limited, sustainability isn't just a goal—it's the foundation 
-                of everything we do. We're committed to eradicating open defecation across Africa 
+                At Ghana First Company Limited, sustainability isn&apos;t just a goal—it&apos;s the foundation 
+                of everything we do. We&apos;re committed to eradicating open defecation across Africa 
                 while creating a circular economy that transforms waste into valuable resources.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">

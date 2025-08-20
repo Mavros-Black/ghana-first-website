@@ -35,7 +35,7 @@ export default function Home() {
   const flagshipProjects = [
     {
       title: "Accra Central Market Sanitation",
-      description: "Modern sanitary facilities serving over 50,000 daily visitors at Ghana's largest market.",
+              description: "Modern sanitary facilities serving over 50,000 daily visitors at Ghana&apos;s largest market.",
       image: "/images/project-1.jpg",
       location: "Accra Central Market",
       status: "Completed"
@@ -111,7 +111,7 @@ export default function Home() {
               Our Mission & Goals
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We're committed to transforming sanitation across Africa through innovation, 
+              We&apos;re committed to transforming sanitation across Africa through innovation, 
               sustainability, and community impact.
             </p>
           </div>
@@ -156,7 +156,7 @@ export default function Home() {
               Our Flagship Projects
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Discover how we're transforming communities through innovative sanitation solutions 
+              Discover how we&apos;re transforming communities through innovative sanitation solutions 
               across Ghana and beyond.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function Home() {
                 Why Choose Ghana First?
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                With over a decade of experience in sanitation management, we've established 
+                With over a decade of experience in sanitation management, we&apos;ve established 
                 ourselves as the leading provider of sustainable sanitation solutions across Africa.
               </p>
               
@@ -259,7 +259,7 @@ export default function Home() {
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Join us in creating a cleaner, healthier, and more sustainable future for Africa. 
-            Let's work together to build better sanitation infrastructure.
+                          Let&apos;s work together to build better sanitation infrastructure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-white text-green-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-colors duration-200">
