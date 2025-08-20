@@ -1,0 +1,8 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="300" height="200" fill="#16a34a" opacity="0.1"/>
+  <rect x="100" y="100" width="200" height="150" fill="#16a34a" opacity="0.2"/>
+  <circle cx="200" cy="175" r="30" fill="#16a34a" opacity="0.3"/>
+  <text x="200" y="250" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Modern Sanitary Facility</text>
+  <text x="200" y="270" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12">Lorry Park Project</text>
+</svg>

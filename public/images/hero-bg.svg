@@ -1,0 +1,89 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#90EE90;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  
+  <!-- Sun -->
+  <circle cx="1600" cy="200" r="80" fill="url(#sun)"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="400" cy="150" rx="120" ry="40" fill="rgba(255,255,255,0.7)"/>
+  <ellipse cx="1200" cy="100" rx="100" ry="35" fill="rgba(255,255,255,0.6)"/>
+  <ellipse cx="800" cy="180" rx="80" ry="30" fill="rgba(255,255,255,0.5)"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="600" width="1920" height="480" fill="url(#ground)"/>
+  
+  <!-- Trees -->
+  <circle cx="200" cy="550" r="60" fill="#228B22"/>
+  <rect x="190" y="550" width="20" height="80" fill="#8B4513"/>
+  
+  <circle cx="400" cy="580" r="50" fill="#32CD32"/>
+  <rect x="395" y="580" width="10" height="60" fill="#8B4513"/>
+  
+  <circle cx="600" cy="540" r="70" fill="#228B22"/>
+  <rect x="590" y="540" width="20" height="90" fill="#8B4513"/>
+  
+  <circle cx="800" cy="570" r="55" fill="#32CD32"/>
+  <rect x="795" y="570" width="10" height="70" fill="#8B4513"/>
+  
+  <circle cx="1000" cy="530" r="65" fill="#228B22"/>
+  <rect x="990" y="530" width="20" height="85" fill="#8B4513"/>
+  
+  <circle cx="1200" cy="560" r="45" fill="#32CD32"/>
+  <rect x="1195" y="560" width="10" height="55" fill="#8B4513"/>
+  
+  <circle cx="1400" cy="520" r="75" fill="#228B22"/>
+  <rect x="1390" y="520" width="20" height="95" fill="#8B4513"/>
+  
+  <circle cx="1600" cy="570" r="50" fill="#32CD32"/>
+  <rect x="1595" y="570" width="10" height="65" fill="#8B4513"/>
+  
+  <circle cx="1800" cy="540" r="60" fill="#228B22"/>
+  <rect x="1790" y="540" width="20" height="80" fill="#8B4513"/>
+  
+  <!-- Modern Sanitation Facility (stylized) -->
+  <rect x="850" y="650" width="220" height="120" fill="rgba(255,255,255,0.9)" stroke="#333" stroke-width="2"/>
+  <rect x="860" y="660" width="200" height="100" fill="rgba(135,206,235,0.3)"/>
+  <circle cx="960" cy="720" r="15" fill="#4CAF50"/>
+  <text x="960" y="780" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Eco-Friendly Facility</text>
+  
+  <!-- Solar Panels -->
+  <rect x="1100" y="680" width="80" height="40" fill="#FFD700"/>
+  <rect x="1110" y="690" width="60" height="20" fill="#333"/>
+  <text x="1140" y="740" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12">Solar Energy</text>
+  
+  <!-- Water Conservation Symbol -->
+  <circle cx="700" cy="720" r="25" fill="rgba(135,206,235,0.6)" stroke="#4682B4" stroke-width="2"/>
+  <path d="M 700 700 Q 720 720 700 740 Q 680 720 700 700" fill="#4682B4"/>
+  <text x="700" y="770" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12">Water Conservation</text>
+  
+  <!-- Recycling Symbol -->
+  <circle cx="1300" cy="720" r="25" fill="rgba(76,175,80,0.6)" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M 1300 700 A 20 20 0 0 1 1320 720 A 20 20 0 0 1 1300 740 A 20 20 0 0 1 1280 720 A 20 20 0 0 1 1300 700" fill="none" stroke="#4CAF50" stroke-width="3"/>
+  <text x="1300" y="770" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12">Recycling</text>
+  
+  <!-- Birds -->
+  <path d="M 300 200 Q 320 180 340 200 Q 320 220 300 200" fill="rgba(255,255,255,0.8)"/>
+  <path d="M 1500 250 Q 1520 230 1540 250 Q 1520 270 1500 250" fill="rgba(255,255,255,0.8)"/>
+  
+  <!-- Environmental Impact Lines -->
+  <path d="M 960 650 Q 960 600 960 550" stroke="rgba(76,175,80,0.6)" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+  <path d="M 1140 680 Q 1140 630 1140 580" stroke="rgba(255,215,0,0.6)" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+  <path d="M 700 680 Q 700 630 700 580" stroke="rgba(135,206,235,0.6)" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+  <path d="M 1300 680 Q 1300 630 1300 580" stroke="rgba(76,175,80,0.6)" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+</svg>
