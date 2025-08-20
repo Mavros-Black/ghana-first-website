@@ -141,24 +141,24 @@ export default function ProjectsPage() {
       </section>
 
       {/* Project Stats */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">50+</div>
-              <div className="text-gray-600 dark:text-gray-400">Projects Completed</div>
+              <div className="text-gray-600 ">Projects Completed</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">8</div>
-              <div className="text-gray-600 dark:text-gray-400">Regions Served</div>
+              <div className="text-gray-600 ">Regions Served</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">100K+</div>
-              <div className="text-gray-600 dark:text-gray-400">Daily Users</div>
+              <div className="text-gray-600 ">Daily Users</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">95%</div>
-              <div className="text-gray-600 dark:text-gray-400">Client Satisfaction</div>
+              <div className="text-gray-600 ">Client Satisfaction</div>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function ProjectsPage() {
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
             <div className="flex items-center space-x-4">
               <Filter className="w-5 h-5 text-gray-600" />
-              <span className="text-gray-700 dark:text-gray-300 font-medium">Filter by:</span>
+              <span className="text-gray-700  font-medium">Filter by:</span>
             </div>
             
             <div className="flex flex-wrap gap-2">
@@ -181,7 +181,7 @@ export default function ProjectsPage() {
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                     selectedCategory === category
                       ? 'bg-green-600 text-white'
-                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
+                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300   '
                   }`}
                 >
                   {category}
@@ -197,7 +197,7 @@ export default function ProjectsPage() {
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                     selectedStatus === status
                       ? 'bg-blue-600 text-white'
-                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
+                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300   '
                   }`}
                 >
                   {status}
@@ -221,21 +221,21 @@ export default function ProjectsPage() {
                 className="group"
               >
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                  <div className="flex items-center justify-between text-sm text-gray-500 ">
                     <span className="flex items-center">
                       <MapPin className="w-4 h-4 mr-1" />
                       {project.location}
                     </span>
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                       project.status === 'Completed' 
-                        ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
-                        : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
+                                            ? 'bg-green-100 text-green-800'
+                    : 'bg-blue-100 text-blue-800'
                     }`}>
                       {project.status}
                     </span>
                   </div>
                   
-                  <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                  <div className="flex items-center justify-between text-sm text-gray-500 ">
                     <span className="flex items-center">
                       <Calendar className="w-4 h-4 mr-1" />
                       {project.date}
@@ -246,11 +246,11 @@ export default function ProjectsPage() {
                     </span>
                   </div>
                   
-                  <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Key Features:</h4>
+                  <div className="pt-4 border-t border-gray-200 ">
+                    <h4 className="font-semibold text-gray-900  mb-2">Key Features:</h4>
                     <ul className="space-y-1">
                       {project.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="text-sm text-gray-600 dark:text-gray-300">
+                        <li key={featureIndex} className="text-sm text-gray-600 ">
                           • {feature}
                         </li>
                       ))}
@@ -264,10 +264,10 @@ export default function ProjectsPage() {
           {filteredProjects.length === 0 && (
             <div className="text-center py-12">
               <Search className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-gray-900  mb-2">
                 No projects found
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Try adjusting your filters to see more projects.
               </p>
             </div>
@@ -276,13 +276,13 @@ export default function ProjectsPage() {
       </section>
 
       {/* Project Impact */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Our Impact Across Ghana
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Through our projects, we&apos;ve created lasting positive change in communities 
               across all regions of Ghana.
             </p>
@@ -293,10 +293,10 @@ export default function ProjectsPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Building className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-gray-900  mb-2">
                 Infrastructure Development
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Modern, sustainable facilities that serve communities for generations.
               </p>
             </div>
@@ -305,10 +305,10 @@ export default function ProjectsPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Droplets className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-gray-900  mb-2">
                 Public Health Improvement
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Reduced waterborne diseases and improved community health outcomes.
               </p>
             </div>
@@ -317,10 +317,10 @@ export default function ProjectsPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Zap className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-gray-900  mb-2">
                 Energy Generation
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Clean energy production from waste, powering local communities.
               </p>
             </div>
@@ -329,10 +329,10 @@ export default function ProjectsPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Globe className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-gray-900  mb-2">
                 Environmental Protection
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Sustainable practices that protect our environment for future generations.
               </p>
             </div>

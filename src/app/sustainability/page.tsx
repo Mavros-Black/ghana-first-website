@@ -139,35 +139,35 @@ export default function SustainabilityPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-6">
                 Our Sustainability Mission
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600  mb-6 leading-relaxed">
                 At Ghana First Company Limited, sustainability isn&apos;t just a goal—it&apos;s the foundation 
                 of everything we do. We&apos;re committed to eradicating open defecation across Africa 
                 while creating a circular economy that transforms waste into valuable resources.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600  mb-8 leading-relaxed">
                 Our innovative approach combines modern technology with traditional wisdom to create 
                 solutions that are not only environmentally sustainable but also economically viable 
                 and socially beneficial for communities.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <div className="text-center p-4 bg-gray-50  rounded-lg">
                   <Leaf className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">Environmental</div>
-                  <div className="text-gray-600 dark:text-gray-400">Protection</div>
+                  <div className="text-2xl font-bold text-gray-900 ">Environmental</div>
+                  <div className="text-gray-600 ">Protection</div>
                 </div>
-                <div className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <div className="text-center p-4 bg-gray-50  rounded-lg">
                   <Users className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">Social</div>
-                  <div className="text-gray-600 dark:text-gray-400">Impact</div>
+                  <div className="text-2xl font-bold text-gray-900 ">Social</div>
+                  <div className="text-gray-600 ">Impact</div>
                 </div>
-                <div className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <div className="text-center p-4 bg-gray-50  rounded-lg">
                   <TrendingUp className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">Economic</div>
-                  <div className="text-gray-600 dark:text-gray-400">Viability</div>
+                  <div className="text-2xl font-bold text-gray-900 ">Economic</div>
+                  <div className="text-gray-600 ">Viability</div>
                 </div>
               </div>
             </div>
@@ -203,13 +203,13 @@ export default function SustainabilityPage() {
       </section>
 
       {/* Circular Economy Model */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Circular Waste Reuse Model
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Our innovative circular economy approach transforms waste into valuable resources, 
               creating a sustainable cycle that benefits everyone.
             </p>
@@ -222,10 +222,10 @@ export default function SustainabilityPage() {
                   {step.icon}
                 </div>
                 <div className="text-sm text-green-600 font-bold mb-2">Step {step.step}</div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-gray-900  mb-4">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-600  leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -245,10 +245,10 @@ export default function SustainabilityPage() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Our Environmental Impact
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Measurable results that demonstrate our commitment to environmental sustainability 
               and community well-being.
             </p>
@@ -260,10 +260,10 @@ export default function SustainabilityPage() {
                 <div className="w-24 h-24 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-white text-2xl font-bold">{impact.metric}</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-gray-900  mb-4">
                   {impact.label}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-600  leading-relaxed">
                   {impact.description}
                 </p>
               </div>
@@ -273,13 +273,13 @@ export default function SustainabilityPage() {
       </section>
 
       {/* UN SDGs */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Contributing to UN Sustainable Development Goals
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Our work directly supports multiple UN SDGs, creating positive change 
               that aligns with global sustainability objectives.
             </p>
@@ -287,17 +287,17 @@ export default function SustainabilityPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sdgGoals.map((goal, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
+              <div key={index} className="bg-white  rounded-xl shadow-lg p-6 card-hover">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-blue-600 rounded-lg flex items-center justify-center mr-4">
                     <span className="text-white font-bold text-lg">{goal.number}</span>
                   </div>
                   <div className="text-2xl">{goal.icon}</div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-semibold text-gray-900  mb-3">
                   {goal.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-600  leading-relaxed">
                   {goal.description}
                 </p>
               </div>
@@ -311,15 +311,15 @@ export default function SustainabilityPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-6">
                 Eradicating Open Defecation
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600  mb-6 leading-relaxed">
                 Open defecation is a critical public health issue affecting millions across Africa. 
                 Our comprehensive approach addresses this challenge through education, infrastructure, 
                 and community engagement.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600  mb-8 leading-relaxed">
                 We work closely with communities to understand their needs, provide appropriate 
                 facilities, and ensure long-term behavioral change through education and awareness programs.
               </p>
@@ -330,10 +330,10 @@ export default function SustainabilityPage() {
                     <Shield className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900  mb-2">
                       Public Health Protection
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 ">
                       Reducing waterborne diseases and improving community health outcomes.
                     </p>
                   </div>
@@ -344,10 +344,10 @@ export default function SustainabilityPage() {
                     <Heart className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900  mb-2">
                       Dignity and Safety
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 ">
                       Providing safe, private facilities that respect human dignity.
                     </p>
                   </div>
@@ -358,10 +358,10 @@ export default function SustainabilityPage() {
                     <Users className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900  mb-2">
                       Community Engagement
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 ">
                       Working with communities to ensure sustainable behavioral change.
                     </p>
                   </div>

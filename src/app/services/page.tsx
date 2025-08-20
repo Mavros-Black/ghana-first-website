@@ -149,10 +149,10 @@ export default function ServicesPage() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Comprehensive Sanitation Solutions
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               From modern facilities to innovative waste management, we provide end-to-end 
               solutions that address the complete sanitation ecosystem.
             </p>
@@ -169,10 +169,10 @@ export default function ServicesPage() {
                 className="h-full"
               >
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Key Features:</h4>
+                  <h4 className="font-semibold text-gray-900 ">Key Features:</h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-gray-600 dark:text-gray-300">
+                      <li key={featureIndex} className="flex items-center text-sm text-gray-600 ">
                         <CheckCircle className="w-4 h-4 text-green-600 mr-2 flex-shrink-0" />
                         {feature}
                       </li>
@@ -186,13 +186,13 @@ export default function ServicesPage() {
       </section>
 
       {/* Our Process */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Our Process
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               We follow a proven methodology to ensure successful project delivery 
               and long-term community impact.
             </p>
@@ -204,10 +204,10 @@ export default function ServicesPage() {
                 <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-white font-bold text-xl">{step.number}</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-gray-900  mb-4">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-600  leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -220,10 +220,10 @@ export default function ServicesPage() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Why Choose Our Services?
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Our comprehensive approach delivers multiple benefits for communities, 
               the environment, and future generations.
             </p>
@@ -232,13 +232,13 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center group">
-                <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gray-100  rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   {benefit.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-gray-900  mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-600  leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
@@ -248,14 +248,14 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Features */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-6">
                 Quality Assurance & Support
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600  mb-8 leading-relaxed">
                 We don&apos;t just install facilities – we ensure they continue to serve 
                 communities effectively for years to come through comprehensive support.
               </p>
@@ -266,10 +266,10 @@ export default function ServicesPage() {
                     <Wrench className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900  mb-2">
                       24/7 Maintenance Support
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 ">
                       Round-the-clock support to ensure your facilities remain operational 
                       and well-maintained at all times.
                     </p>
@@ -281,10 +281,10 @@ export default function ServicesPage() {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900  mb-2">
                       Rapid Response Times
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 ">
                       Quick response to maintenance requests and emergency situations 
                       to minimize service disruptions.
                     </p>
@@ -296,10 +296,10 @@ export default function ServicesPage() {
                     <Users className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900  mb-2">
                       Community Training
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 ">
                       Comprehensive training programs for local staff to ensure proper 
                       operation and maintenance of facilities.
                     </p>

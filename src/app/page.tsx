@@ -104,13 +104,13 @@ export default function Home() {
       </section>
 
       {/* Company Goals Section */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Our Mission & Goals
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               We&apos;re committed to transforming sanitation across Africa through innovation, 
               sustainability, and community impact.
             </p>
@@ -122,10 +122,10 @@ export default function Home() {
                 <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   {goal.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-gray-900  mb-4">
                   {goal.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-600  leading-relaxed">
                   {goal.description}
                 </p>
               </div>
@@ -152,10 +152,10 @@ export default function Home() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Our Flagship Projects
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Discover how we&apos;re transforming communities through innovative sanitation solutions 
               across Ghana and beyond.
             </p>
@@ -170,15 +170,15 @@ export default function Home() {
                 image={project.image}
                 className="group"
               >
-                <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4">
+                <div className="flex items-center justify-between text-sm text-gray-500  mb-4">
                   <span className="flex items-center">
                     <Globe className="w-4 h-4 mr-1" />
                     {project.location}
                   </span>
                   <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                     project.status === 'Completed' 
-                      ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
-                      : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
+                                          ? 'bg-green-100 text-green-800'
+                    : 'bg-blue-100 text-blue-800'
                   }`}>
                     {project.status}
                   </span>
@@ -196,14 +196,14 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-6">
                 Why Choose Ghana First?
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600  mb-8 leading-relaxed">
                 With over a decade of experience in sanitation management, we&apos;ve established 
                 ourselves as the leading provider of sustainable sanitation solutions across Africa.
               </p>
@@ -219,7 +219,7 @@ export default function Home() {
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                    <span className="text-gray-700 ">{feature}</span>
                   </div>
                 ))}
               </div>

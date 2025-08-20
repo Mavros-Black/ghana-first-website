@@ -91,36 +91,36 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-6">
                 Our Story
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600  mb-6 leading-relaxed">
                 Founded in 2012, Ghana First Company Limited emerged from a vision to transform 
                 public health across Africa through innovative sanitation solutions. What started 
                 as a small operation in East Legon, Accra, has grown into a leading provider of 
                 sustainable sanitation infrastructure across the continent.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600  mb-8 leading-relaxed">
                 Our journey began with a simple mission: to eradicate open defecation and provide 
                 communities with modern, hygienic facilities that not only serve immediate needs 
                 but also contribute to environmental conservation and economic development.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <div className="text-center p-4 bg-gray-50  rounded-lg">
                   <Calendar className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">2012</div>
-                  <div className="text-gray-600 dark:text-gray-400">Founded</div>
+                  <div className="text-2xl font-bold text-gray-900 ">2012</div>
+                  <div className="text-gray-600 ">Founded</div>
                 </div>
-                <div className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <div className="text-center p-4 bg-gray-50  rounded-lg">
                   <Building className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">East Legon</div>
-                  <div className="text-gray-600 dark:text-gray-400">Headquarters</div>
+                  <div className="text-2xl font-bold text-gray-900 ">East Legon</div>
+                  <div className="text-gray-600 ">Headquarters</div>
                 </div>
-                <div className="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <div className="text-center p-4 bg-gray-50  rounded-lg">
                   <Globe className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">5+</div>
-                  <div className="text-gray-600 dark:text-gray-400">Countries</div>
+                  <div className="text-2xl font-bold text-gray-900 ">5+</div>
+                  <div className="text-gray-600 ">Countries</div>
                 </div>
               </div>
             </div>
@@ -151,17 +151,17 @@ export default function AboutPage() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Eye className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-2xl font-bold text-gray-900  mb-4">
                 Our Vision
               </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-600  leading-relaxed">
                 To be the leading provider of sustainable sanitation solutions across Africa, 
                 creating healthier communities and a cleaner environment for future generations.
               </p>
@@ -171,10 +171,10 @@ export default function AboutPage() {
               <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Target className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-2xl font-bold text-gray-900  mb-4">
                 Our Mission
               </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-600  leading-relaxed">
                 To revolutionize public health through innovative, sustainable sanitation 
                 solutions that serve communities effectively while protecting our environment.
               </p>
@@ -187,10 +187,10 @@ export default function AboutPage() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Our Core Values
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               These fundamental principles guide everything we do and shape our approach 
               to sustainable development.
             </p>
@@ -199,13 +199,13 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {coreValues.map((value, index) => (
               <div key={index} className="text-center group">
-                <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gray-100  rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-gray-900  mb-4">
                   {value.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-600  leading-relaxed">
                   {value.description}
                 </p>
               </div>
@@ -215,13 +215,13 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership Team */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Our Leadership Team
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Meet the experienced professionals driving innovation and sustainable 
               development across Africa.
             </p>
@@ -229,18 +229,18 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {leadership.map((member, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
+              <div key={index} className="bg-white  rounded-xl shadow-lg overflow-hidden card-hover">
                 <div className="h-48 bg-gradient-to-r from-green-600 to-blue-600 flex items-center justify-center">
                   <Users className="w-16 h-16 text-white" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-xl font-semibold text-gray-900  mb-2">
                     {member.name}
                   </h3>
-                  <p className="text-green-600 dark:text-green-400 font-medium mb-4">
+                  <p className="text-green-600  font-medium mb-4">
                     {member.position}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                  <p className="text-gray-600  text-sm leading-relaxed">
                     {member.bio}
                   </p>
                 </div>
@@ -254,10 +254,10 @@ export default function AboutPage() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Awards & Recognition
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Our commitment to excellence and innovation has been recognized by 
               industry leaders and environmental organizations.
             </p>

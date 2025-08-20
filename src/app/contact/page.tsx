@@ -114,16 +114,16 @@ export default function ContactPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {contactInfo.map((info, index) => (
-              <div key={index} className="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
-                <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div key={index} className="text-center p-6 bg-white  rounded-xl shadow-lg">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   {info.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-lg font-semibold text-gray-900  mb-3">
                   {info.title}
                 </h3>
                 <div className="space-y-1">
                   {info.details.map((detail, detailIndex) => (
-                    <p key={detailIndex} className="text-gray-600 dark:text-gray-300">
+                    <p key={detailIndex} className="text-gray-600 ">
                       {detail}
                     </p>
                   ))}
@@ -135,28 +135,28 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Map */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900">
+      <section className="section-padding bg-gray-50 ">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl font-bold text-gray-900  mb-6">
                 Send Us a Message
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+              <p className="text-lg text-gray-600  mb-8">
                               Fill out the form below and we&apos;ll get back to you within 24 hours.
               We&apos;re here to help with all your sanitation needs.
               </p>
               
               {isSubmitted ? (
-                <div className="bg-green-50 dark:bg-green-900 border border-green-200 dark:border-green-700 rounded-lg p-6">
+                <div className="bg-green-50 border border-green-200 rounded-lg p-6">
                   <div className="flex items-center">
                     <CheckCircle className="w-6 h-6 text-green-600 mr-3" />
                     <div>
-                      <h3 className="text-lg font-semibold text-green-800 dark:text-green-200">
+                      <h3 className="text-lg font-semibold text-green-800 ">
                         Message Sent Successfully!
                       </h3>
-                      <p className="text-green-700 dark:text-green-300">
+                      <p className="text-green-700 ">
                         Thank you for contacting us. We&apos;ll get back to you within 24 hours.
                       </p>
                     </div>
@@ -166,7 +166,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700  mb-2">
                         Full Name *
                       </label>
                       <input
@@ -176,13 +176,13 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-green-500 dark:bg-gray-800 dark:text-white"
+                        className="w-full px-4 py-3 border border-gray-300  rounded-lg focus:outline-none focus:border-green-500  "
                         placeholder="Enter your full name"
                       />
                     </div>
                     
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700  mb-2">
                         Email Address *
                       </label>
                       <input
@@ -192,7 +192,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-green-500 dark:bg-gray-800 dark:text-white"
+                        className="w-full px-4 py-3 border border-gray-300  rounded-lg focus:outline-none focus:border-green-500  "
                         placeholder="Enter your email address"
                       />
                     </div>
@@ -200,7 +200,7 @@ export default function ContactPage() {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700  mb-2">
                         Phone Number
                       </label>
                       <input
@@ -209,13 +209,13 @@ export default function ContactPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-green-500 dark:bg-gray-800 dark:text-white"
+                        className="w-full px-4 py-3 border border-gray-300  rounded-lg focus:outline-none focus:border-green-500  "
                         placeholder="Enter your phone number"
                       />
                     </div>
                     
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="company" className="block text-sm font-medium text-gray-700  mb-2">
                         Company/Organization
                       </label>
                       <input
@@ -224,14 +224,14 @@ export default function ContactPage() {
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-green-500 dark:bg-gray-800 dark:text-white"
+                        className="w-full px-4 py-3 border border-gray-300  rounded-lg focus:outline-none focus:border-green-500  "
                         placeholder="Enter your company name"
                       />
                     </div>
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700  mb-2">
                       Message *
                     </label>
                     <textarea
@@ -241,7 +241,7 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-green-500 dark:bg-gray-800 dark:text-white resize-none"
+                      className="w-full px-4 py-3 border border-gray-300  rounded-lg focus:outline-none focus:border-green-500   resize-none"
                       placeholder="Tell us about your project or inquiry..."
                     />
                   </div>
@@ -271,16 +271,16 @@ export default function ContactPage() {
             <div className="space-y-8">
               {/* Map */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-gray-900  mb-4">
                   Our Location
                 </h3>
-                <div className="bg-gray-200 dark:bg-gray-700 rounded-lg h-64 flex items-center justify-center">
+                <div className="bg-gray-200  rounded-lg h-64 flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 ">
                       Interactive map will be embedded here
                     </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                    <p className="text-sm text-gray-500  mt-2">
                       Adjiriganor, East Legon, Greater Accra, Ghana
                     </p>
                   </div>
@@ -288,8 +288,8 @@ export default function ContactPage() {
               </div>
               
               {/* Quick Contact */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              <div className="bg-white  rounded-xl p-6 shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-900  mb-4">
                   Quick Contact
                 </h3>
                 <div className="space-y-4">
@@ -297,7 +297,7 @@ export default function ContactPage() {
                     <Phone className="w-5 h-5 text-green-600" />
                     <a 
                       href="tel:+233244123456" 
-                      className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200"
+                      className="text-gray-600  hover:text-green-600  transition-colors duration-200"
                     >
                       +233 24 412 3456
                     </a>
@@ -306,14 +306,14 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 text-green-600" />
                     <a 
                       href="mailto:info@ghanafirst.com" 
-                      className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200"
+                      className="text-gray-600  hover:text-green-600  transition-colors duration-200"
                     >
                       info@ghanafirst.com
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MessageSquare className="w-5 h-5 text-green-600" />
-                    <span className="text-gray-600 dark:text-gray-300">
+                    <span className="text-gray-600 ">
                       WhatsApp: +233 24 412 3456
                     </span>
                   </div>
@@ -352,47 +352,47 @@ export default function ContactPage() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600  max-w-3xl mx-auto">
               Find answers to common questions about our services and processes.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="bg-white  rounded-xl p-6 shadow-lg">
+              <h3 className="text-lg font-semibold text-gray-900  mb-3">
                 How long does a typical project take?
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Project timelines vary depending on scope and complexity. Small facilities typically take 2-4 weeks, while larger projects may take 2-3 months. We&apos;ll provide a detailed timeline during consultation.
               </p>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="bg-white  rounded-xl p-6 shadow-lg">
+              <h3 className="text-lg font-semibold text-gray-900  mb-3">
                 Do you provide maintenance services?
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Yes, we offer comprehensive maintenance services including 24/7 support, regular inspections, and emergency repairs to ensure your facilities remain operational at all times.
               </p>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="bg-white  rounded-xl p-6 shadow-lg">
+              <h3 className="text-lg font-semibold text-gray-900  mb-3">
                 What areas do you serve?
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 We serve communities across Ghana and are expanding to other African countries. Our team can travel to any location to assess and implement sanitation solutions.
               </p>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="bg-white  rounded-xl p-6 shadow-lg">
+              <h3 className="text-lg font-semibold text-gray-900  mb-3">
                 How do I get a quote for my project?
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Contact us through the form above or call us directly. We&apos;ll schedule a consultation to assess your needs and provide a detailed quote within 48 hours.
               </p>
             </div>

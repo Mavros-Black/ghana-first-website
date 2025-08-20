@@ -13,7 +13,7 @@ interface CardProps {
 
 const Card = ({ title, description, image, icon, href, className = '', children }: CardProps) => {
   const CardContent = () => (
-    <div className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover ${className}`}>
+    <div className={`bg-white rounded-xl shadow-lg overflow-hidden card-hover ${className}`}>
       {image && (
         <div className="relative h-48 overflow-hidden">
           <img
@@ -32,11 +32,11 @@ const Card = ({ title, description, image, icon, href, className = '', children 
           </div>
         )}
         
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">
           {title}
         </h3>
         
-        <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+        <p className="text-gray-600 leading-relaxed mb-4">
           {description}
         </p>
         
@@ -45,7 +45,7 @@ const Card = ({ title, description, image, icon, href, className = '', children 
         {href && (
           <Link
             href={href}
-            className="inline-flex items-center text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 font-medium transition-colors duration-200"
+            className="inline-flex items-center text-green-600 hover:text-green-700 font-medium transition-colors duration-200"
           >
             Learn More
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
