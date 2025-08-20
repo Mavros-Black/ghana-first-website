@@ -41,11 +41,15 @@ const Navigation = () => {
     }`}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 lg:h-20">
-                     {/* Logo */}
-           <Link href="/" className="flex items-center space-x-2">
-             <div className="w-10 h-10 bg-gradient-to-r from-red-600 to-blue-600 rounded-lg flex items-center justify-center">
-               <span className="text-white font-bold text-lg">GF</span>
-             </div>
+                               {/* Logo */}
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img 
+                src="/images/logo.svg" 
+                alt="Ghana First Company Limited Logo" 
+                className="h-10 w-auto"
+              />
+            </div>
             <div className="hidden sm:block">
               <h1 className={`text-xl font-bold ${
                 isScrolled ? 'text-gray-900 dark:text-white' : 'text-white'

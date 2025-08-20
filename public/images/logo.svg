@@ -1,0 +1,35 @@
+<svg width="300" height="120" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue Semi-Truck -->
+  <g id="truck">
+    <!-- Truck body -->
+    <rect x="10" y="40" width="60" height="25" fill="#2563eb" rx="3"/>
+    <!-- Truck cabin -->
+    <rect x="70" y="45" width="25" height="20" fill="#2563eb" rx="2"/>
+    <!-- Wheels -->
+    <circle cx="25" cy="70" r="8" fill="#1e40af"/>
+    <circle cx="25" cy="70" r="4" fill="#dbeafe"/>
+    <circle cx="75" cy="70" r="8" fill="#1e40af"/>
+    <circle cx="75" cy="70" r="4" fill="#dbeafe"/>
+    <!-- Road line -->
+    <path d="M 5 75 Q 50 75 95 75" stroke="#3b82f6" stroke-width="2" fill="none"/>
+    <!-- Truck details -->
+    <rect x="15" y="45" width="50" height="15" fill="#1e40af" opacity="0.3"/>
+    <rect x="75" y="50" width="15" height="10" fill="#1e40af" opacity="0.3"/>
+  </g>
+  
+  <!-- GHANA text -->
+  <text x="110" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#dc2626">GHANA</text>
+  
+  <!-- ST superscript -->
+  <text x="200" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000000">ST</text>
+  
+  <!-- Yellow line under ST -->
+  <rect x="200" y="48" width="20" height="3" fill="#fbbf24"/>
+  
+  <!-- Stylized "1" -->
+  <path d="M 220 45 Q 240 45 240 65 Q 240 85 220 85 Q 200 85 200 65 Q 200 45 220 45" fill="none" stroke="#000000" stroke-width="4"/>
+  <path d="M 210 85 Q 230 85 230 105" stroke="#000000" stroke-width="4" fill="none"/>
+  
+  <!-- COMPANY LTD. text -->
+  <text x="110" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#000000">COMPANY LTD.</text>
+</svg>
