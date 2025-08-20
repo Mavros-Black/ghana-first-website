@@ -234,22 +234,23 @@ export default function NewsPage() {
                  <ArrowLeft className="w-4 h-4" />
                </button>
                
-               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
-                 const isActive = currentPage === page;
-                 const baseClasses = 'px-4 py-2 rounded-lg font-medium transition-colors duration-200';
-                 const activeClasses = baseClasses + ' bg-green-600 text-white';
-                 const inactiveClasses = baseClasses + ' bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700';
-                 
-                 return (
-                   <button
-                     key={page}
-                     onClick={() => handlePageChange(page)}
-                     className={isActive ? activeClasses : inactiveClasses}
-                   >
-                     {page}
-                   </button>
-                 );
-               })}
+                               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
+                  const isActive = currentPage === page;
+                  
+                  return (
+                    <button
+                      key={page}
+                      onClick={() => handlePageChange(page)}
+                      className={`px-4 py-2 rounded-lg font-medium transition-colors duration-200 ${
+                        isActive 
+                          ? 'bg-green-600 text-white' 
+                          : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  );
+                })}
                
                <button
                  onClick={() => handlePageChange(currentPage + 1)}
