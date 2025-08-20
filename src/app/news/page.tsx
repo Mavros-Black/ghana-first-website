@@ -221,8 +221,8 @@ export default function NewsPage() {
         </div>
       </section>
 
-             {/* Pagination - Commented out due to Vercel deployment issues */}
-       {/* {totalPages > 1 && (
+                    {/* Pagination */}
+       {totalPages > 1 && (
          <section className="section-padding bg-gray-50 dark:bg-gray-900">
            <div className="container-custom">
              <div className="flex justify-center items-center space-x-2">
@@ -236,16 +236,15 @@ export default function NewsPage() {
                
                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
                  const isActive = currentPage === page;
-                 const activeClasses = 'bg-green-600 text-white';
-                 const inactiveClasses = 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700';
+                 const baseClasses = 'px-4 py-2 rounded-lg font-medium transition-colors duration-200';
+                 const activeClasses = baseClasses + ' bg-green-600 text-white';
+                 const inactiveClasses = baseClasses + ' bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700';
                  
                  return (
                    <button
                      key={page}
                      onClick={() => handlePageChange(page)}
-                     className={`px-4 py-2 rounded-lg font-medium transition-colors duration-200 ${
-                       isActive ? activeClasses : inactiveClasses
-                     }`}
+                     className={isActive ? activeClasses : inactiveClasses}
                    >
                      {page}
                    </button>
@@ -262,7 +261,7 @@ export default function NewsPage() {
              </div>
            </div>
          </section>
-       )} */}
+       )}
 
       {/* Media Kit */}
       <section className="section-padding">
