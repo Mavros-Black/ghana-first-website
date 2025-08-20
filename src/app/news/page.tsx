@@ -22,9 +22,9 @@ export default function NewsPage() {
   const newsArticles = [
     {
       id: 1,
-      title: "Ghana First Wins 'Best Sanitation Company' Award at EPA Excellence Awards",
-      excerpt: "Ghana First Company Limited has been recognized as the 'Best Sanitation Company' at the 2023 Ghana Environmental Protection Agency Excellence Awards for our innovative approach to sustainable waste management.",
-      content: "Ghana First Company Limited has been recognized as the 'Best Sanitation Company' at the 2023 Ghana Environmental Protection Agency Excellence Awards. The award recognizes our innovative approach to sustainable waste management and our commitment to environmental protection across Ghana. Our bio-digester technology and waste-to-energy solutions have set new standards in the industry, demonstrating that environmental responsibility and business success can go hand in hand.",
+      title: "Ghana First Wins &apos;Best Sanitation Company&apos; Award at EPA Excellence Awards",
+              excerpt: "Ghana First Company Limited has been recognized as the &apos;Best Sanitation Company&apos; at the 2023 Ghana Environmental Protection Agency Excellence Awards for our innovative approach to sustainable waste management.",
+        content: "Ghana First Company Limited has been recognized as the &apos;Best Sanitation Company&apos; at the 2023 Ghana Environmental Protection Agency Excellence Awards. The award recognizes our innovative approach to sustainable waste management and our commitment to environmental protection across Ghana. Our bio-digester technology and waste-to-energy solutions have set new standards in the industry, demonstrating that environmental responsibility and business success can go hand in hand.",
       author: "Ghana First Team",
       date: "December 15, 2023",
       category: "Awards",
